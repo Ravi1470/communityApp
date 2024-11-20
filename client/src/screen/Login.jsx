@@ -17,18 +17,18 @@ const Login = () => {
     setUsername("");
   };
   return (
-    <div className="flex h-[100vh] w-full  justify-center items-center">
+    <div className="flex h-[100vh] w-full bg-[url('./components/assets/bg-02.webp')]  justify-center items-center">
       <div
-        className=" text-white bg-black flex flex-col h-3/5  w-72
-      shadow-violet-500 shadow-sm items-center justify-between">
-        <div className="flex h-1/6 w-full justify-center items-center">
+        className=" text-white flex flex-col  
+    items-center h-4/6 min-w-72 shadow-slate-300 shadow-sm justify-between backdrop-blur-2xl">
+        <div className="flex h-1/6 w-full justify-center items-center ">
           <h4 className="">LOGIN</h4>
         </div>
         <form
           action=""
           className=" flex h-2/5 flex-col items-center justify-between">
           <input
-            className=" pl-2 w-52 h-8 rounded-sm  bg-gray-600"
+            className=" pl-2 w-52 h-8 rounded-sm text-slate-950 bg-slate-300"
             type="text"
             placeholder="Username"
             maxLength={10}
@@ -36,7 +36,7 @@ const Login = () => {
             required
           />
           <PasswordInput
-            className="pl-2 h-8 w-52 rounded-sm bg-gray-600 "
+            className="pl-2 h-8 w-52 rounded-sm text-slate-950 bg-slate-300 "
             type="password"
             placeholder="Password"
             maxLength={10}
@@ -58,7 +58,7 @@ const Login = () => {
         </form>
         <div className="flex h-2/6 w-full justify-center items-center ">
           <p className="text-sm m-1 ">Don't have an account?</p>
-          <Link className="text-blue-400" to={`/signup`}>
+          <Link className="text-blue-900 font-semibold" to={`/signup`}>
             Sign up
           </Link>
         </div>
